@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/header';
+import TopFold from './components/topfold';
+import Brand from './components/brands';
+import TrandingNft from './components/tranding_nft';
+import Footer from './components/footer';
+import Info from './components/info';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         NFT Marketplace
-        </a>
-      </header>
+    <div>
+      <Header />
+      <TopFold />
+      <Brand />
+      <TrandingNft />
+      <Info />
+      <Footer />
     </div>
   );
 }
